@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{A452812B-ECA9-AD29-66C1-65B1ECC90240}") = "TuringDanceOff", "Assembly-CSharp.csproj", "{B0F95C58-F063-30D9-914C-14FEF05ADE25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0F95C58-F063-30D9-914C-14FEF05ADE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F95C58-F063-30D9-914C-14FEF05ADE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F95C58-F063-30D9-914C-14FEF05ADE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F95C58-F063-30D9-914C-14FEF05ADE25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
