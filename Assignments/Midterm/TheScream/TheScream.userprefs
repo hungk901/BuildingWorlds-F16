@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BallControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/RestartControl.cs" Line="9" Column="2" />
+      <File FileName="Assets/Scripts/BallLauncher.cs" Line="13" Column="2" />
+      <File FileName="Assets/Scripts/ShowRestartText.cs" Line="23" Column="3" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="36" Column="43" />
+      <File FileName="Assets/Scripts/PinControl.cs" Line="10" Column="17" />
+      <File FileName="Assets/Scripts/BallControl.cs" Line="53" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
