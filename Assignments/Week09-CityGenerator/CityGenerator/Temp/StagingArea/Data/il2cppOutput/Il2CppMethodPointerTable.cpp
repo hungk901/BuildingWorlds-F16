@@ -10402,7 +10402,7 @@ extern "C" void RestartController_Update_m2769584173 ();
 extern "C" void Streetmaker__ctor_m4178547338 ();
 extern "C" void Streetmaker_Start_m3125685130 ();
 extern "C" void Streetmaker_Update_m2412810691 ();
-extern "C" void Streetmaker_RandomBuilding_m1518877308 ();
+extern "C" void Streetmaker_RandomBuilding_m3746695539 ();
 extern const Il2CppMethodPointer g_MethodPointers[10392] = 
 {
 	Locale_GetText_m2389348044,
@@ -20796,5 +20796,5 @@ extern const Il2CppMethodPointer g_MethodPointers[10392] =
 	Streetmaker__ctor_m4178547338,
 	Streetmaker_Start_m3125685130,
 	Streetmaker_Update_m2412810691,
-	Streetmaker_RandomBuilding_m1518877308,
+	Streetmaker_RandomBuilding_m3746695539,
 };

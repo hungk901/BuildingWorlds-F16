@@ -1,7 +1,7 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
-<type fullname="FadeoutText" preserve="all"/>
 <type fullname="BuildingCounter" preserve="all"/>
+<type fullname="FadeoutText" preserve="all"/>
 <type fullname="RestartController" preserve="all"/>
 <type fullname="Streetmaker" preserve="all"/>
 </assembly>

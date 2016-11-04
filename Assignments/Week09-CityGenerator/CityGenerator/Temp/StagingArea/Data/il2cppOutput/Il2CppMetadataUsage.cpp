@@ -1283,6 +1283,7 @@ Il2CppClass* ListPool_1_t3379703851_il2cpp_TypeInfo_var;
 Il2CppClass* ListPool_1_t251475784_il2cpp_TypeInfo_var;
 Il2CppClass* U3CturnOffTextU3Ec__Iterator0_t1836898442_il2cpp_TypeInfo_var;
 Il2CppClass* WaitForSeconds_t1615819279_il2cpp_TypeInfo_var;
+Il2CppClass* Transform_t1659122786_il2cpp_TypeInfo_var;
 Il2CppClass* IEventSystemHandler_t1130525624_il2cpp_TypeInfo_var;
 Il2CppClass* ICollection_1_t2025115611_il2cpp_TypeInfo_var;
 Il2CppClass* DictionaryEntryU5BU5D_t479206547_il2cpp_TypeInfo_var;
@@ -1848,7 +1849,7 @@ const MethodInfo* List_1_Add_m352670381_MethodInfo_var;
 const MethodInfo* List_1_AddRange_m2850874023_MethodInfo_var;
 const MethodInfo* List_1_RemoveAt_m572573913_MethodInfo_var;
 const MethodInfo* GameObject_GetComponent_TisText_t9039225_m202917489_MethodInfo_var;
-const MethodInfo* GameObject_GetComponent_TisRenderer_t3076687687_m4102086307_MethodInfo_var;
+const MethodInfo* Component_GetComponent_TisRenderer_t3076687687_m500377675_MethodInfo_var;
 const MethodInfo* ObjectPool_1_Get_m3366600709_MethodInfo_var;
 const MethodInfo* List_1_get_Count_m3147836881_MethodInfo_var;
 const MethodInfo* ObjectPool_1_Release_m3828095081_MethodInfo_var;
@@ -4765,7 +4766,7 @@ Il2CppCodeGenString* _stringLiteral3093451866;
 Il2CppCodeGenString* _stringLiteral1342531814;
 Il2CppCodeGenString* _stringLiteral2341039237;
 Il2CppCodeGenString* _stringLiteral3474434835;
-extern void** const g_MetadataUsages[4754] = 
+extern void** const g_MetadataUsages[4755] = 
 {
 	(void**)&Contraction_t3998770676_0_0_0_var,
 	(void**)&Level2Map_t3664214860_0_0_0_var,
@@ -6039,6 +6040,7 @@ extern void** const g_MetadataUsages[4754] =
 	(void**)&ListPool_1_t251475784_il2cpp_TypeInfo_var,
 	(void**)&U3CturnOffTextU3Ec__Iterator0_t1836898442_il2cpp_TypeInfo_var,
 	(void**)&WaitForSeconds_t1615819279_il2cpp_TypeInfo_var,
+	(void**)&Transform_t1659122786_il2cpp_TypeInfo_var,
 	(void**)&IEventSystemHandler_t1130525624_il2cpp_TypeInfo_var,
 	(void**)&ICollection_1_t2025115611_il2cpp_TypeInfo_var,
 	(void**)&DictionaryEntryU5BU5D_t479206547_il2cpp_TypeInfo_var,
@@ -6604,7 +6606,7 @@ extern void** const g_MetadataUsages[4754] =
 	(void**)&List_1_AddRange_m2850874023_MethodInfo_var,
 	(void**)&List_1_RemoveAt_m572573913_MethodInfo_var,
 	(void**)&GameObject_GetComponent_TisText_t9039225_m202917489_MethodInfo_var,
-	(void**)&GameObject_GetComponent_TisRenderer_t3076687687_m4102086307_MethodInfo_var,
+	(void**)&Component_GetComponent_TisRenderer_t3076687687_m500377675_MethodInfo_var,
 	(void**)&ObjectPool_1_Get_m3366600709_MethodInfo_var,
 	(void**)&List_1_get_Count_m3147836881_MethodInfo_var,
 	(void**)&ObjectPool_1_Release_m3828095081_MethodInfo_var,

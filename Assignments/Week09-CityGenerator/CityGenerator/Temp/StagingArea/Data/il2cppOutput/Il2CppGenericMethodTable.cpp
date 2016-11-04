@@ -1071,7 +1071,7 @@ extern const Il2CppGenericMethodFunctionsDefinitions s_Il2CppGenericMethodFuncti
 	{ 1345, 223/*(Il2CppMethodPointer)&List_1_AddRange_m2229151411_gshared*/, 90/*90*/},
 	{ 1346, 239/*(Il2CppMethodPointer)&List_1_RemoveAt_m1301016856_gshared*/, 42/*42*/},
 	{ 1347, 436/*(Il2CppMethodPointer)&GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared*/, 4/*4*/},
-	{ 1348, 436/*(Il2CppMethodPointer)&GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared*/, 4/*4*/},
+	{ 1348, 423/*(Il2CppMethodPointer)&Component_GetComponent_TisIl2CppObject_m267839954_gshared*/, 4/*4*/},
 	{ 1349, 716/*(Il2CppMethodPointer)&Array_get_swapper_TisByte_t2862609660_m525536776_gshared*/, 40/*40*/},
 	{ 1350, 717/*(Il2CppMethodPointer)&Array_get_swapper_TisInt32_t1153838500_m3162346280_gshared*/, 40/*40*/},
 	{ 1351, 718/*(Il2CppMethodPointer)&Array_get_swapper_TisCustomAttributeNamedArgument_t3059612989_m636397832_gshared*/, 40/*40*/},

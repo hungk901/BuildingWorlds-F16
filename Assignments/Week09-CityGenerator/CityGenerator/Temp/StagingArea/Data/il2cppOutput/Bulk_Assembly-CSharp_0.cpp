@@ -31,8 +31,8 @@ struct RestartController_t1815615211;
 struct Streetmaker_t2763168257;
 // UnityEngine.Renderer
 struct Renderer_t3076687687;
-// UnityEngine.GameObject
-struct GameObject_t3674682005;
+// UnityEngine.Transform
+struct Transform_t1659122786;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -90,6 +90,7 @@ struct GameObject_t3674682005;
 #include "UnityEngine_UnityEngine_Quaternion1553702882MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1553702882.h"
 #include "UnityEngine_UnityEngine_Renderer3076687687.h"
+#include "UnityEngine_UnityEngine_Component3501516275.h"
 #include "UnityEngine_UnityEngine_Material3870600107.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
@@ -97,8 +98,11 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t3674682005 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
 #define GameObject_GetComponent_TisText_t9039225_m202917489(__this, method) ((  Text_t9039225 * (*) (GameObject_t3674682005 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
-#define GameObject_GetComponent_TisRenderer_t3076687687_m4102086307(__this, method) ((  Renderer_t3076687687 * (*) (GameObject_t3674682005 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t3501516275 * __this, const MethodInfo* method);
+#define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
+#define Component_GetComponent_TisRenderer_t3076687687_m500377675(__this, method) ((  Renderer_t3076687687 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -547,8 +551,8 @@ extern "C"  void Streetmaker_Start_m3125685130 (Streetmaker_t2763168257 * __this
 }
 // System.Void Streetmaker::Update()
 extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
-extern Il2CppClass* GameObject_t3674682005_il2cpp_TypeInfo_var;
-extern const MethodInfo* GameObject_GetComponent_TisRenderer_t3076687687_m4102086307_MethodInfo_var;
+extern Il2CppClass* Transform_t1659122786_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t3076687687_m500377675_MethodInfo_var;
 extern const uint32_t Streetmaker_Update_m2412810691_MetadataUsageId;
 extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __this, const MethodInfo* method)
 {
@@ -559,8 +563,8 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 		s_Il2CppMethodIntialized = true;
 	}
 	float V_0 = 0.0f;
-	GameObject_t3674682005 * V_1 = NULL;
-	GameObject_t3674682005 * V_2 = NULL;
+	Transform_t1659122786 * V_1 = NULL;
+	Transform_t1659122786 * V_2 = NULL;
 	float V_3 = 0.0f;
 	Vector3_t4282066566  V_4;
 	memset(&V_4, 0, sizeof(V_4));
@@ -576,27 +580,27 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 	memset(&V_9, 0, sizeof(V_9));
 	{
 		Transform_t1659122786 * L_0 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t1659122786 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_1 = L_0;
 		Vector3_t4282066566  L_2 = Transform_get_position_m2211398607(L_1, /*hidden argument*/NULL);
 		Transform_t1659122786 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_4 = Transform_get_forward_m877665793(L_3, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_5 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_4, (5.0f), /*hidden argument*/NULL);
 		Vector3_t4282066566  L_6 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_2, L_5, /*hidden argument*/NULL);
-		Transform_set_position_m3111394108(L_0, L_6, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_7 = Streetmaker_RandomBuilding_m1518877308(__this, /*hidden argument*/NULL);
+		Transform_set_position_m3111394108(L_1, L_6, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_7 = Streetmaker_RandomBuilding_m3746695539(__this, /*hidden argument*/NULL);
 		__this->set_tmpPrefab01_5(L_7);
-		GameObject_t3674682005 * L_8 = Streetmaker_RandomBuilding_m1518877308(__this, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_8 = Streetmaker_RandomBuilding_m3746695539(__this, /*hidden argument*/NULL);
 		__this->set_tmpPrefab02_6(L_8);
 		float L_9 = Random_Range_m3362417303(NULL /*static, unused*/, (0.0f), (100.0f), /*hidden argument*/NULL);
 		V_0 = L_9;
 		float L_10 = V_0;
 		if ((!(((float)L_10) < ((float)(85.0f)))))
 		{
-			goto IL_01e0;
+			goto IL_01db;
 		}
 	}
 	{
-		GameObject_t3674682005 * L_11 = __this->get_tmpPrefab01_5();
+		Transform_t1659122786 * L_11 = __this->get_tmpPrefab01_5();
 		Transform_t1659122786 * L_12 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_13 = Transform_get_position_m2211398607(L_12, /*hidden argument*/NULL);
 		Transform_t1659122786 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
@@ -607,23 +611,23 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 		Quaternion_t1553702882  L_19 = Transform_get_rotation_m11483428(L_18, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
 		Object_t3071478659 * L_20 = Object_Instantiate_m2255090103(NULL /*static, unused*/, L_11, L_17, L_19, /*hidden argument*/NULL);
-		V_1 = ((GameObject_t3674682005 *)CastclassSealed(L_20, GameObject_t3674682005_il2cpp_TypeInfo_var));
-		GameObject_t3674682005 * L_21 = V_1;
-		Transform_t1659122786 * L_22 = GameObject_get_transform_m1278640159(L_21, /*hidden argument*/NULL);
+		V_1 = ((Transform_t1659122786 *)CastclassClass(L_20, Transform_t1659122786_il2cpp_TypeInfo_var));
+		Transform_t1659122786 * L_21 = V_1;
+		Transform_t1659122786 * L_22 = Component_get_transform_m4257140443(L_21, /*hidden argument*/NULL);
 		float L_23 = Random_Range_m3362417303(NULL /*static, unused*/, (0.5f), (4.5f), /*hidden argument*/NULL);
 		Vector3_t4282066566  L_24;
 		memset(&L_24, 0, sizeof(L_24));
 		Vector3__ctor_m2926210380(&L_24, (0.9f), L_23, (0.9f), /*hidden argument*/NULL);
 		Transform_set_localScale_m310756934(L_22, L_24, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_25 = V_1;
-		Transform_t1659122786 * L_26 = GameObject_get_transform_m1278640159(L_25, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_27 = V_1;
-		Transform_t1659122786 * L_28 = GameObject_get_transform_m1278640159(L_27, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_25 = V_1;
+		Transform_t1659122786 * L_26 = Component_get_transform_m4257140443(L_25, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_27 = V_1;
+		Transform_t1659122786 * L_28 = Component_get_transform_m4257140443(L_27, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_29 = Transform_get_position_m2211398607(L_28, /*hidden argument*/NULL);
 		V_4 = L_29;
 		float L_30 = (&V_4)->get_x_1();
-		GameObject_t3674682005 * L_31 = V_1;
-		Transform_t1659122786 * L_32 = GameObject_get_transform_m1278640159(L_31, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_31 = V_1;
+		Transform_t1659122786 * L_32 = Component_get_transform_m4257140443(L_31, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_33 = Transform_get_position_m2211398607(L_32, /*hidden argument*/NULL);
 		V_5 = L_33;
 		float L_34 = (&V_5)->get_z_3();
@@ -631,12 +635,12 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 		memset(&L_35, 0, sizeof(L_35));
 		Vector3__ctor_m2926210380(&L_35, L_30, (0.0f), L_34, /*hidden argument*/NULL);
 		Transform_set_position_m3111394108(L_26, L_35, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_36 = V_1;
-		Renderer_t3076687687 * L_37 = GameObject_GetComponent_TisRenderer_t3076687687_m4102086307(L_36, /*hidden argument*/GameObject_GetComponent_TisRenderer_t3076687687_m4102086307_MethodInfo_var);
+		Transform_t1659122786 * L_36 = V_1;
+		Renderer_t3076687687 * L_37 = Component_GetComponent_TisRenderer_t3076687687_m500377675(L_36, /*hidden argument*/Component_GetComponent_TisRenderer_t3076687687_m500377675_MethodInfo_var);
 		Material_t3870600107 * L_38 = Renderer_get_material_m2720864603(L_37, /*hidden argument*/NULL);
 		Color_t4194546905  L_39 = Random_ColorHSV_m3233070633(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Material_set_color_m3296857020(L_38, L_39, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_40 = __this->get_tmpPrefab02_6();
+		Transform_t1659122786 * L_40 = __this->get_tmpPrefab02_6();
 		Transform_t1659122786 * L_41 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_42 = Transform_get_position_m2211398607(L_41, /*hidden argument*/NULL);
 		Transform_t1659122786 * L_43 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
@@ -646,23 +650,23 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 		Transform_t1659122786 * L_47 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Quaternion_t1553702882  L_48 = Transform_get_rotation_m11483428(L_47, /*hidden argument*/NULL);
 		Object_t3071478659 * L_49 = Object_Instantiate_m2255090103(NULL /*static, unused*/, L_40, L_46, L_48, /*hidden argument*/NULL);
-		V_2 = ((GameObject_t3674682005 *)CastclassSealed(L_49, GameObject_t3674682005_il2cpp_TypeInfo_var));
-		GameObject_t3674682005 * L_50 = V_2;
-		Transform_t1659122786 * L_51 = GameObject_get_transform_m1278640159(L_50, /*hidden argument*/NULL);
+		V_2 = ((Transform_t1659122786 *)CastclassClass(L_49, Transform_t1659122786_il2cpp_TypeInfo_var));
+		Transform_t1659122786 * L_50 = V_2;
+		Transform_t1659122786 * L_51 = Component_get_transform_m4257140443(L_50, /*hidden argument*/NULL);
 		float L_52 = Random_Range_m3362417303(NULL /*static, unused*/, (0.5f), (4.5f), /*hidden argument*/NULL);
 		Vector3_t4282066566  L_53;
 		memset(&L_53, 0, sizeof(L_53));
 		Vector3__ctor_m2926210380(&L_53, (0.9f), L_52, (0.9f), /*hidden argument*/NULL);
 		Transform_set_localScale_m310756934(L_51, L_53, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_54 = V_2;
-		Transform_t1659122786 * L_55 = GameObject_get_transform_m1278640159(L_54, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_56 = V_2;
-		Transform_t1659122786 * L_57 = GameObject_get_transform_m1278640159(L_56, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_54 = V_2;
+		Transform_t1659122786 * L_55 = Component_get_transform_m4257140443(L_54, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_56 = V_2;
+		Transform_t1659122786 * L_57 = Component_get_transform_m4257140443(L_56, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_58 = Transform_get_position_m2211398607(L_57, /*hidden argument*/NULL);
 		V_6 = L_58;
 		float L_59 = (&V_6)->get_x_1();
-		GameObject_t3674682005 * L_60 = V_2;
-		Transform_t1659122786 * L_61 = GameObject_get_transform_m1278640159(L_60, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_60 = V_2;
+		Transform_t1659122786 * L_61 = Component_get_transform_m4257140443(L_60, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_62 = Transform_get_position_m2211398607(L_61, /*hidden argument*/NULL);
 		V_7 = L_62;
 		float L_63 = (&V_7)->get_z_3();
@@ -670,26 +674,26 @@ extern "C"  void Streetmaker_Update_m2412810691 (Streetmaker_t2763168257 * __thi
 		memset(&L_64, 0, sizeof(L_64));
 		Vector3__ctor_m2926210380(&L_64, L_59, (0.0f), L_63, /*hidden argument*/NULL);
 		Transform_set_position_m3111394108(L_55, L_64, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_65 = V_2;
-		Renderer_t3076687687 * L_66 = GameObject_GetComponent_TisRenderer_t3076687687_m4102086307(L_65, /*hidden argument*/GameObject_GetComponent_TisRenderer_t3076687687_m4102086307_MethodInfo_var);
+		Transform_t1659122786 * L_65 = V_2;
+		Renderer_t3076687687 * L_66 = Component_GetComponent_TisRenderer_t3076687687_m500377675(L_65, /*hidden argument*/Component_GetComponent_TisRenderer_t3076687687_m500377675_MethodInfo_var);
 		Material_t3870600107 * L_67 = Renderer_get_material_m2720864603(L_66, /*hidden argument*/NULL);
 		Color_t4194546905  L_68 = Random_ColorHSV_m3233070633(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Material_set_color_m3296857020(L_67, L_68, /*hidden argument*/NULL);
-		goto IL_0280;
+		goto IL_027b;
 	}
 
-IL_01e0:
+IL_01db:
 	{
 		float L_69 = Random_Range_m3362417303(NULL /*static, unused*/, (0.0f), (100.0f), /*hidden argument*/NULL);
 		V_3 = L_69;
 		float L_70 = V_3;
 		if ((!(((float)L_70) < ((float)(50.0f)))))
 		{
-			goto IL_0240;
+			goto IL_023b;
 		}
 	}
 	{
-		GameObject_t3674682005 * L_71 = __this->get_myStreetmakerPrefab_2();
+		Transform_t1659122786 * L_71 = __this->get_myStreetmakerPrefab_2();
 		Transform_t1659122786 * L_72 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_73 = Transform_get_position_m2211398607(L_72, /*hidden argument*/NULL);
 		Transform_t1659122786 * L_74 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
@@ -699,12 +703,12 @@ IL_01e0:
 		Quaternion_t1553702882  L_77 = Quaternion_Euler_m1204688217(NULL /*static, unused*/, (0.0f), ((float)((float)L_76-(float)(90.0f))), (0.0f), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
 		Object_Instantiate_m2255090103(NULL /*static, unused*/, L_71, L_73, L_77, /*hidden argument*/NULL);
-		goto IL_0280;
+		goto IL_027b;
 	}
 
-IL_0240:
+IL_023b:
 	{
-		GameObject_t3674682005 * L_78 = __this->get_myStreetmakerPrefab_2();
+		Transform_t1659122786 * L_78 = __this->get_myStreetmakerPrefab_2();
 		Transform_t1659122786 * L_79 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
 		Vector3_t4282066566  L_80 = Transform_get_position_m2211398607(L_79, /*hidden argument*/NULL);
 		Transform_t1659122786 * L_81 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
@@ -716,7 +720,7 @@ IL_0240:
 		Object_Instantiate_m2255090103(NULL /*static, unused*/, L_78, L_80, L_84, /*hidden argument*/NULL);
 	}
 
-IL_0280:
+IL_027b:
 	{
 		int32_t L_85 = __this->get_stepCount_7();
 		__this->set_stepCount_7(((int32_t)((int32_t)L_85+(int32_t)1)));
@@ -724,7 +728,7 @@ IL_0280:
 		int32_t L_87 = __this->get_stepCountMax_8();
 		if ((((int32_t)L_86) <= ((int32_t)L_87)))
 		{
-			goto IL_02aa;
+			goto IL_02a5;
 		}
 	}
 	{
@@ -733,16 +737,16 @@ IL_0280:
 		Object_DestroyObject_m3900253135(NULL /*static, unused*/, L_88, /*hidden argument*/NULL);
 	}
 
-IL_02aa:
+IL_02a5:
 	{
 		return;
 	}
 }
-// UnityEngine.GameObject Streetmaker::RandomBuilding()
-extern "C"  GameObject_t3674682005 * Streetmaker_RandomBuilding_m1518877308 (Streetmaker_t2763168257 * __this, const MethodInfo* method)
+// UnityEngine.Transform Streetmaker::RandomBuilding()
+extern "C"  Transform_t1659122786 * Streetmaker_RandomBuilding_m3746695539 (Streetmaker_t2763168257 * __this, const MethodInfo* method)
 {
 	float V_0 = 0.0f;
-	GameObject_t3674682005 * V_1 = NULL;
+	Transform_t1659122786 * V_1 = NULL;
 	{
 		float L_0 = Random_Range_m3362417303(NULL /*static, unused*/, (0.0f), (100.0f), /*hidden argument*/NULL);
 		V_0 = L_0;
@@ -753,20 +757,20 @@ extern "C"  GameObject_t3674682005 * Streetmaker_RandomBuilding_m1518877308 (Str
 		}
 	}
 	{
-		GameObject_t3674682005 * L_2 = __this->get_myBuildingPrefab01_3();
+		Transform_t1659122786 * L_2 = __this->get_myBuildingPrefab01_3();
 		V_1 = L_2;
 		goto IL_002e;
 	}
 
 IL_0027:
 	{
-		GameObject_t3674682005 * L_3 = __this->get_myBuildingPrefab02_4();
+		Transform_t1659122786 * L_3 = __this->get_myBuildingPrefab02_4();
 		V_1 = L_3;
 	}
 
 IL_002e:
 	{
-		GameObject_t3674682005 * L_4 = V_1;
+		Transform_t1659122786 * L_4 = V_1;
 		return L_4;
 	}
 }
