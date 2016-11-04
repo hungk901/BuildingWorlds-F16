@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 public class Streetmaker : MonoBehaviour {
 
+	BuildingChecker myBuildingChecker;
+	int _numOfBuildings;
+	int numOfBuildingsMax = 750;
 //	public GameObject myStreetmakerPrefab;
 //	public GameObject myBuildingPrefab01;
 //	public GameObject myBuildingPrefab02;
@@ -18,43 +21,54 @@ public class Streetmaker : MonoBehaviour {
 	int stepCount = 0;
 	int stepCountMax = 0;
 
+
 	void Start () {
-		stepCountMax = (int)Random.Range (15f, 25f);
+		stepCountMax = (int)Random.Range (15f, 20f);
 	}
 
 	void Update () {
-		transform.position += transform.forward * 5f;
+		_numOfBuildings = GameObject.Find ("BuildingCheck").GetComponent<BuildingChecker>().numOfBuildings;
+//		Debug.Log (_numOfBuildings);
 
-		tmpPrefab01 = RandomBuilding ();
-		tmpPrefab02 = RandomBuilding ();
-		float randomNumTmp1 = Random.Range (0f, 100f);
+		if (_numOfBuildings < numOfBuildingsMax) {
+			transform.position += transform.forward * 5f;
 
-		if (randomNumTmp1 < 85f) {
+			tmpPrefab01 = RandomBuilding ();
+			tmpPrefab02 = RandomBuilding ();
+			float randomNumTmp1 = Random.Range (0f, 100f);
 
-//			GameObject leftBuilding = (GameObject)Instantiate (tmpPrefab01, transform.position - transform.right * 5f, transform.rotation);
-			Transform leftBuilding = (Transform)Instantiate (tmpPrefab01, transform.position - transform.right * 5f, transform.rotation);
-			leftBuilding.transform.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
-			leftBuilding.transform.position = new Vector3 (leftBuilding.transform.position.x, 0, leftBuilding.transform.position.z);
-			leftBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
+			if (randomNumTmp1 < 85f) {
+//				GameObject leftBuilding = (GameObject)Instantiate (tmpPrefab01, transform.position - transform.right * 5f, transform.rotation);
+//				leftBuilding.transform.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
+//				leftBuilding.transform.position = new Vector3 (leftBuilding.transform.position.x, 0, leftBuilding.transform.position.z);
+//				leftBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
+				Transform leftBuilding = (Transform)Instantiate (tmpPrefab01, transform.position - transform.right * 5f, transform.rotation);
+				leftBuilding.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
+				leftBuilding.position = new Vector3 (leftBuilding.transform.position.x, 0, leftBuilding.transform.position.z);
+				leftBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
 
-//			GameObject rightBuilding = (GameObject)Instantiate (tmpPrefab02, transform.position + transform.right * 5f, transform.rotation);
-			Transform rightBuilding = (Transform)Instantiate (tmpPrefab02, transform.position + transform.right * 5f, transform.rotation);
-			rightBuilding.transform.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
-			rightBuilding.transform.position = new Vector3 (rightBuilding.transform.position.x, 0, rightBuilding.transform.position.z);
-			rightBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
-		} else {
-			float randomNumTmp2 = Random.Range (0f, 100f);
-
-			if (randomNumTmp2 < 50f) {
-				Instantiate (myStreetmakerPrefab, transform.position, Quaternion.Euler (0, transform.eulerAngles.y - 90, 0));
+//				GameObject rightBuilding = (GameObject)Instantiate (tmpPrefab02, transform.position + transform.right * 5f, transform.rotation);
+//				rightBuilding.transform.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
+//				rightBuilding.transform.position = new Vector3 (rightBuilding.transform.position.x, 0, rightBuilding.transform.position.z);
+//				rightBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
+				Transform rightBuilding = (Transform)Instantiate (tmpPrefab02, transform.position + transform.right * 5f, transform.rotation);
+				rightBuilding.localScale = new Vector3 (.9f, Random.Range (.5f, 4.5f), .9f);
+				rightBuilding.position = new Vector3 (rightBuilding.transform.position.x, 0, rightBuilding.transform.position.z);
+				rightBuilding.GetComponent<Renderer> ().material.color = Random.ColorHSV ();
 			} else {
-				Instantiate (myStreetmakerPrefab, transform.position, Quaternion.Euler (0, transform.eulerAngles.y + 90, 0));
-			}
-		}
-		stepCount++;
+				float randomNumTmp2 = Random.Range (0f, 100f);
 
-		if (stepCount > stepCountMax) {
-			DestroyObject (this.gameObject);
+				if (randomNumTmp2 < 50f) {
+					Instantiate (myStreetmakerPrefab, transform.position, Quaternion.Euler (0, transform.eulerAngles.y - 90, 0));
+				} else {
+					Instantiate (myStreetmakerPrefab, transform.position, Quaternion.Euler (0, transform.eulerAngles.y + 90, 0));
+				}
+			}
+			stepCount++;
+
+			if (stepCount >= stepCountMax) {
+				DestroyObject (this.gameObject);
+			}
 		}
 	}
 
