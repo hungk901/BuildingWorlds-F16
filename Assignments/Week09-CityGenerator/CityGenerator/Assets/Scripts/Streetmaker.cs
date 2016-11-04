@@ -14,7 +14,7 @@ public class Streetmaker : MonoBehaviour {
 	public int stepCountMax = 0;
 
 	void Start () {
-		stepCountMax = (int)Random.Range (15f, 35f);
+		stepCountMax = (int)Random.Range (15f, 25f);
 	}
 
 	void Update () {

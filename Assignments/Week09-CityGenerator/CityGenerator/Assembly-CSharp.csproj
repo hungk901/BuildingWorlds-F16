@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FadeoutText.cs" />
      <Compile Include="Assets\Scripts\BuildingCounter.cs" />
+     <Compile Include="Assets\Scripts\FadeoutText.cs" />
      <Compile Include="Assets\Scripts\RestartController.cs" />
      <Compile Include="Assets\Scripts\Streetmaker.cs" />
  <Reference Include="UnityEngine.UI">
