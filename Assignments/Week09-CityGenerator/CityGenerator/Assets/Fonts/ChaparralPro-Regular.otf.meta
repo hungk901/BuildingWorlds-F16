@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6b368eda40414463cb68208b402dd0af
+timeCreated: 1478239207
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 60
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chaparral Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
