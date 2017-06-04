@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{82E13CA1-50FE-E37B-FCF7-35765A367A44}") = "RobotVsHuman-ver2", "Assembly-CSharp.csproj", "{6D3D2DB6-16EF-7358-B36F-65E955065442}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotVsHuman-ver2", "Assembly-CSharp.csproj", "{6D3D2DB6-16EF-7358-B36F-65E955065442}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
