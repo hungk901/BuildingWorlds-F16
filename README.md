@@ -2,9 +2,9 @@
 
 *MFA D+T | Parsons School of Design*
 
--
 
-This repo contains the projects and class assignments for cousre "Building Worlds" at MFA Design & Technology (Fall 2016), Parsons School of Design.
+
+This repo contains the 3D game projects and class assignments for cousre "Building Worlds" at MFA Design & Technology (Fall 2016), Parsons School of Design.
 
 
 ## Outline
