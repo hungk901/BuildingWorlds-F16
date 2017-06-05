@@ -1,6 +1,6 @@
 # Building Worlds
 
-MFA D+T | Parsons School of Design
+*MFA D+T | Parsons School of Design*
 
 -
 
